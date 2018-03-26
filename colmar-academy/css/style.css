@@ -1,0 +1,398 @@
+body
+{
+  width: 100%;
+  font-family: monospace;
+  color: gray;
+}
+
+/* navigation section */
+
+ul
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 64px;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  top: 0;
+}
+
+.phone
+{
+  display: none;
+}
+
+@media only screen and (max-width: 480px)
+{
+  li h1,
+  li a
+  {
+    display: none;
+  }
+
+  .phone
+  {
+    display: inline;
+  }
+
+  ul
+  {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+ul img
+{
+  margin-left: 24px;
+  margin-top: 16px;
+}
+
+ul li h1
+{
+  font-size: 32px;
+  position: relative;
+  bottom: 10px;
+  text-transform: uppercase;
+}
+
+strong
+{
+  color: black;
+}
+
+a
+{
+  text-decoration: none;
+  color: black;
+}
+
+li
+{
+  float: left;
+}
+
+.right
+{
+  float: right;
+  margin-right: 16px;
+  margin-top: 20px;
+}
+
+/* learn section */
+
+.learn
+{
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+}
+
+#learn-text
+{
+  display: inline-block;
+  width: 30%;
+}
+
+.banner
+{
+  width: 60%;
+  height: auto;
+  margin: 96px 24px 32px 24px;
+  display: inline;
+}
+
+h3 a
+{
+  background-color: gray;
+  color: white;
+  margin: 8px 0px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 480px)
+{
+
+  .learn{
+    display: block;
+  }
+
+  .banner
+  {
+    width: 100%;
+    margin: 0px;
+    margin-top: 56px;
+  }
+
+  #learn-text
+  {
+    display: block;
+    width: 100%;
+  }
+
+  #learn-text h1
+  {
+    display: block;
+    margin: 32px 16px;
+  }
+
+  #learn-text h2
+  {
+    margin-left: 16px;
+    margin-bottom: 24px;
+  }
+
+  h3 a
+  {
+    width: 75%;
+  }
+
+}
+
+/* practice secetion */
+
+#practice
+{
+  display: flex;
+}
+
+#leftpractice
+{
+  width: 60%;
+  height: auto;
+  padding: 32px 24px;
+}
+
+#leftpractice img
+{
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+#rightpractice
+{
+  width: 40%;
+  height: auto;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.main-item img
+{
+  position: relative;
+  top: 16px;
+  width: 35%;
+  height: auto;
+  padding: 16px 16px;
+}
+
+.infomain
+{
+  width: 60%;
+  display: block;
+}
+
+.main-text
+{
+  display: inline-block;
+  width: 50%;
+  position: relative;
+  bottom: 72px;
+}
+
+.phone-img
+{
+  display: none;
+}
+
+@media only screen and (max-width: 480px)
+{
+  #leftpractice
+  {
+    display: none;
+  }
+
+  .main-item img
+  {
+    width: 100%;
+  }
+
+  #rightpractice
+  {
+    width: 100%;
+    display: block;
+  }
+
+  .main-text
+  {
+    bottom: 0px;
+    margin-left: 30px;
+    margin-bottom: 32px;
+  }
+
+  .phone-img
+  {
+    display: block;
+    width: 100%;
+  }
+
+  .desktop-img
+  {
+    display: none;
+  }
+
+}
+
+/* start learning */
+
+#start-learning
+{
+  padding: 32px 72px;
+  background-color: lightgray;
+}
+
+#start-learning h1
+{
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+#course
+{
+  background-color: white;
+  margin: 32px 32px;
+  display: inline-block;
+  width:27%;
+
+}
+
+#course img
+{
+  width: 100%;
+  height: auto;
+  display: inline;
+}
+
+#course-text
+{
+  padding-left: 16px;
+}
+
+@media only screen and (max-width: 480px)
+{
+  #course img,
+  #course-text p
+  {
+    display: none;
+  }
+
+  #course
+  {
+    background-color: white;
+    width: 80%;
+    text-align: center;
+    padding-right: 15px;
+  }
+
+  #start-learning
+  {
+    text-align: center;
+  }
+
+}
+
+/* thesis */
+
+#thesis
+{
+  padding: 32px 24px;
+}
+
+#thesis h1
+{
+  text-align: center;
+}
+
+video
+{
+  margin: 32px 24px 24px 0px;
+  display: inline;
+  float: left;
+}
+
+#side-items
+{
+  display: inline;
+  width: 40%;
+}
+
+#side-item
+{
+  display: flex;
+  position: relative;
+  top: 16px;
+  width: 38%;
+  align-items: center;
+}
+
+#side-item img
+{
+  width: 35%;
+  float: left;
+  margin: 16px;
+}
+
+#side-item-text
+{
+  display: inline;
+  width: 65%;
+}
+
+.imagine
+{
+  display: block;
+  margin-left: 24px;
+}
+
+@media only screen and (max-width: 480px)
+{
+  #side-item,
+  .imagine
+  {
+    display: none;
+  }
+
+  video
+  {
+    width: 100%;
+    display: block;
+    padding-bottom: 40px;
+  }
+
+}
+
+/* footer */
+
+footer
+{
+  padding: 16px 24px;
+}
+
+@media only screen and (max-width: 480px)
+{
+  footer a
+  {
+    display: none;
+  }
+}
